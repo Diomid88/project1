@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Сборка компьютера</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
                     <a href="#">Процесс работы</a>
                     <a href="#">Команда</a>
                 </nav>
-                <button type="button" class="button header__button">Оставить заявку</button>
+                <button type="button" class="button header__button model__button">Оставить заявку</button>
         </div>
     </header>
     <main class="main">
@@ -30,24 +30,24 @@
             <div class="container">
                 <h1 class="main-display__header">Собираем игровой ПК под ваш бюджет</h1>
                 <div class=" timer main-display__timer">
-                    <div class="timer__item">
+                    <div class="timer__item block__center">
                         <div class="timer__count">18</div>
                         <div class="timer__text">дней</div>
                     </div>
-                    <div class="timer__item">
+                    <div class="timer__item block__center">
                         <div class="timer__count">18</div>
                         <div class="timer__text">часов</div>
                     </div>
-                    <div class="timer__item">
+                    <div class="timer__item block__center">
                         <div class="timer__count">18</div>
                         <div class="timer__text">минут</div>
                     </div>
-                    <div class="timer__item">
+                    <div class="timer__item block__center">
                         <div class="timer__count">18</div>
                         <div class="timer__text">секунд</div>
                     </div>
                 </div>
-                <button class="button main-display__button">Оставить заявку</button>
+                <button class="button main-display__button model__button">Оставить заявку</button>
             </div>
             <div class="main-display__background">
                 <img src="img/main-screen__bgc.jpg" alt="">
@@ -71,7 +71,7 @@
                 <div class="process__wrap">
                     <div class="process__title">
                         <div class="process__img">
-                            <img src="img/Ellipse 1 (Stroke).svg" alt="">
+                            <img src="img/Ellipse 2.svg" alt="">
                         </div>
                         <h2 class="process__header">Процесс работы</h2>      
                     </div>
@@ -99,6 +99,88 @@
                 </div>
             </div>
         </section>
+        <section class="command">
+            <div class="container">
+                <div class="process__title command__title">
+                    <div class="process__img">
+                        <img src="img/Ellipse 2.svg" alt="">
+                    </div>
+                    <h2 class="process__header command__header">Наша команда</h2>      
+                </div>
+                <div class="command__wrap">
+                    <div class="command__item block__center">
+                        <div class="command__img">
+                            <img src="img/kom1.png" alt="">
+                        </div>
+                        <h3 class="command__name">Евгений Петров</h3>
+                        <div class="command__professional">Специалист по видеокартам</div>
+                        <a href="#" class="button command__link">Биография</a>
+                    </div>
+                    <div class="command__item block__center">
+                        <div class="command__img">
+                            <img src="img/kom2.png" alt="">
+                        </div>
+                        <h3 class="command__name">Алексей Козлов</h3>
+                        <div class="command__professional">Специалист по видеокартам</div>
+                        <a href="#" class="button command__link">Биография</a>
+                    </div>
+                    <div class="command__item block__center">
+                        <div class="command__img">
+                            <img src="img/kom3.png" alt="">
+                        </div>
+                        <h3 class="command__name">Дмитрий Иванов</h3>
+                        <div class="command__professional">Специалист по видеокартам</div>
+                        <a href="#" class="button command__link">Биография</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="assembly">
+            <div class="container">
+                <div class="assembly__wrap block__center">
+                    <h2 class="assembly__header">Закажите свою уникальную сборку</h2>
+                    <div class="assembly__description">Мы свяжемся с вами, чтобы уточнить детали заказа</div>
+                    <button class="button assembly__button model__button">Оставить заявку</button>
+                    <div class="assembly__socials">
+                        <div class="assembly__item block__center">
+                            <img src="img/vk.svg" alt="">
+                        </div>
+                        <div class="assembly__item block__center">
+                            <img src="img/youtube.svg" alt="">
+                        </div>
+                        <div class="assembly__item block__center">
+                            <img src="img/facebook.svg" alt="">
+                        </div>
+                        <div class="assembly__item block__center">
+                            <img src="img/instagram.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <form action="#" class="modal block__center">
+            <div class="modal__inner">
+                <div class="modal__close">
+                    <img src="img/cross.svg" alt="">
+                </div>
+                <h3 class="modal__header">Заявка на сборку ПК</h3>
+                <div class="modal__subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</div>
+                <div class="modal__elements">
+                    <div class="modal__item">
+                        <input type="text" class="modal__input" placeholder="Как вас зовут">
+                    </div>
+                    <div class="modal__item">
+                        <input type="tel" class="modal__input" placeholder="Номер телефона">
+                    </div>
+                    <div class="modal__item">
+                        <input type="email" class="modal__input" placeholder="E-mail">
+                    </div>
+                    
+                </div>
+                <button type="submit" class="button main-display__button">Отправить</button>
+            </div>
+        </form>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
